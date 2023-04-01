@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface IPersonalRepository extends JpaRepository<Personal,Long> {
+public interface IPersonalRepository extends JpaRepository<Personal,Integer> {
     //@Procedure(value = "carcularNomina")
 
     @Query(value = "CALL carcularNomina(:personal,:mesin,:yearin);", nativeQuery = true)

@@ -11,7 +11,22 @@ public class PersonalService {
     @Autowired
     IPersonalRepository personalRepository;
 
-    public void addPersonal(Personal personal){
+    public Boolean addPersonal(Personal personal){
+        if(getPersonal( personal.idrol)==null)
+            return false;
          personalRepository.save(personal);
+        return true;
+    }
+    public Personal getPersonal(Integer personal){
+         Personal personal1=null;
+        try{
+
+
+            personal1=personalRepository.findById(personal).get();
+        }
+        catch (Exception e){
+            return personal1;
+        }
+        return personal1;
     }
 }
