@@ -12,7 +12,7 @@ public class PersonalService {
     IPersonalRepository personalRepository;
 
     public Boolean addPersonal(Personal personal){
-        if(getPersonal( personal.idrol)==null)
+        if(getPersonal( personal.idrol)!=null)
             return false;
          personalRepository.save(personal);
         return true;

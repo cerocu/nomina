@@ -21,6 +21,7 @@ public class NominaResponse {
 
     public Integer horatrabajadas;
     public Integer totalporentrega;
+    public Integer personal;
     public Integer bonoporhoras;
     public Double retenciones;
     public Double sueldo;

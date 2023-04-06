@@ -27,9 +27,10 @@ public class NominaService {
             System.out.println(obj[0]);
            nominaResponse.setHoratrabajadas( Integer.parseInt(String.valueOf(obj[0])));
             nominaResponse.setTotalporentrega(Integer.parseInt(String.valueOf(obj[1])));
-            nominaResponse.setBonoporhoras(Integer.parseInt(String.valueOf(obj[2])));
-            nominaResponse.setRetenciones(Double.parseDouble(String.valueOf(obj[3])));
-            nominaResponse.setSueldo(Double.parseDouble(String.valueOf(obj[4])));
+            nominaResponse.setPersonal(Integer.parseInt(String.valueOf(obj[2])));
+            nominaResponse.setBonoporhoras(Integer.parseInt(String.valueOf(obj[3])));
+            nominaResponse.setRetenciones(Double.parseDouble(String.valueOf(obj[4])));
+            nominaResponse.setSueldo(Double.parseDouble(String.valueOf(obj[5])));
             nominas.add(nominaResponse);
         }
 

@@ -45,6 +45,8 @@ public class DemoController {
 
     @PostMapping("/personal")
     public ResponseEntity<String> addPersonal(@RequestBody Personal personal){
+
+        System.out.println(personal);
          if(personalService.addPersonal(personal))
              return new ResponseEntity<>("", HttpStatus.OK);
         return new ResponseEntity<>("", HttpStatus.CONFLICT);

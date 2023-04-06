@@ -28,4 +28,16 @@ public class Personal implements Serializable {
     public Integer salario;
     @Column(name = "vales")
     public Integer vales;
+
+    @Override
+    public String toString() {
+        return "Personal{" +
+                "numero=" + numero +
+                ", idrol=" + idrol +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", salario=" + salario +
+                ", vales=" + vales +
+                '}';
+    }
 }
